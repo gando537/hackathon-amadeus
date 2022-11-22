@@ -1,0 +1,44 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="tr-job-posted section-padding">
+    <div class="container">
+		<div class="job-tab text-center">
+			<div>
+				<img src="assets/images/accueil.jpg" alt="images" class="img-fluid">
+			</div>
+			<div class="tab-content text-left">
+				<div role="tabpanel" class="tab-pane fade active show" id="hot-jobs">
+					<div class="row">
+						<div *ngFor="let activity of activities" class="col-sm-6 col-md-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<span class="tr-title">
+											<a href="#">{{activity.name}}</a>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>{{activity.city}}</li>
+											<li>Level : <i class="fa fa-star" aria-hidden="true"></i>{{activity.levelAccessibility}}/5</li>
+										</ul>
+										<a href={{activity.link}} class="btn btn-success">VISITEZ</a>
+									</div>
+								</div>
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="{{activity.imageLink}}" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">{{activity.name}}</a>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>{{activity.city}}</li>
+										<li>Level : <span><i class="fa fa-star" aria-hidden="true"></i></span>{{activity.levelAccessibility}}/5</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.tab-pane -->
+			</div>
+		</div><!-- /.job-tab -->
+	</div><!-- /.container -->
+</div>
