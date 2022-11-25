@@ -4,6 +4,7 @@ import com.amadeus.hackathon.exception.UserNotFoundException;
 import com.amadeus.hackathon.model.Activity;
 import com.amadeus.hackathon.repository.ActivityRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -34,6 +35,10 @@ public class ActivityService {
     public Activity findActivityById(Long id) throws Throwable {
         return this.activityRepo.findActivityById(id)
                 .orElseThrow(() -> new UserNotFoundException(("User by id " + id + "was not found")));
+    }
+
+    public List<Activity> findByNameContaining(String name) {
+        return this.activityRepo.findByNameContaining(name);
     }
 
     public void deleteActivity(Long id){

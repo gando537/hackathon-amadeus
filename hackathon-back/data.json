@@ -1,61 +1,10 @@
 {
-    "city": "Frejus",
-    "imageLink": "assets/images/aqualandfrejus.jpeg",
-    "levelAccessibility": 1,
-    "link": "https://www.aqualand.fr/frejus/",
-    "name": "Park Aqualand",
-    "type": "Theme park"
-}
-{
-    "city": "Côte d'Azur",
-    "imageLink": "assets/images/LogoAsterix.jpeg",
-    "levelAccessibility": 1,
+    "activityCode": "81f38ba9-706e-4608-b3ad-c22e6754a8e5",
+    "city": "Plailly",
+    "id": 4,
+    "imageLink": "assets/images/Parcasterix.jpeg",
+    "levelAccessibility": 5,
     "link": "https://www.parcasterix.fr/infos-pratiques/accessibilite-handicap",
-    "name": "Park Asterix Antibes",
+    "name": "Parc Astérix",
     "type": "Theme park"
 }
-{
-    "city": "Côte d'Azur",
-    "imageLink": "assets/images/marineland.jpeg",
-    "levelAccessibility": 1,
-    "link": "https://www.marineland.fr/preparer-votre-visite/informations-pratiques/comment-venir",
-    "name": "park Côte d'Azur",
-    "type": "Theme park"
-}
-{
-    "activityCode": "0b980841-0daf-4e4a-9685-c946ab0618a6",
-    "city": "Coupvray",
-    "id": 1,
-    "imageLink": "assets/images/disnayland.jpeg",
-    "levelAccessibility": 1,
-    "link": "https://www.disneylandparis.com/fr-fr/services-visiteurs",
-    "name": "Disneyland Paris",
-    "type": "Theme park"
-}
-{
-    "activityCode": "8afc8257-92f9-4ec3-be03-9ec82473a33e",
-    "city": "Chasseneuil-du-Poitou",
-    "id": 3,
-    "imageLink": "assets/images/futuroscope.jpeg",
-    "levelAccessibility": 1,
-    "link": "https://www.futuroscope.com/fr/infos-pratiques/conseils-de-visite?them",
-    "name": "Futuroscope",
-    "type": "Amusement Parks and Theme Parks"
-}
-
-{
-    "activityCode": "9a3284c9-36e6-4d7b-b191-a38c3c73747c",
-    "city": "Les Epesses",
-    "id": 2,
-    "imageLink": "assets/images/puydufou.jpeg",
-    "levelAccessibility": 1,
-    "link": "https://www.puydufou.com/france/fr/faq",
-    "name": "Puy du fou",
-    "type": "Amusement park'"
-}
-
-https://www.marineland.fr/preparer-votre-visite/informations-pratiques/comment-venir
-https://www.parcasterix.fr/infos-pratiques/accessibilite-handicap
-https://www.aqualand.fr/frejus/
-
-

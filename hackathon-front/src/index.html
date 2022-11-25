@@ -8,6 +8,170 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+</b><select id="activity" onchange="getActivity(this)">
+  <option value="">Select an activity : </option>
+  <option value="Value1">Disneyland Paris</option>
+  <option value="Value2">Puy du fou</option>
+  <option value="Value3">Futuroscope</option>
+  <option value="Value4">Parc Astérix</option>
+  <option value="Value5">Marineland</option>
+  <option value="Value6">Aqualand</option>
+  <option value="Value7">Vulcania</option>
+  <option value="Value8">Oceanopolis</option>
+  <option value="Value9">Nigloland</option>
+  <option value="Value10">Cité de l'espace</option>
+  <option value="Value11">Fraispertuis City</option>
+  <option value="Value12">Dennlys parc</option>
+  <option value="Value13">La Mer de Sable</option>
+  <option value="Value14">Parc des Combes</option>
+  <option value="Value15">Walibi Rhône-Alpes</option>
+  <option value="Value16">Europa-Park</option>
+  <option value="Value17">OK Corral</option>
+  <option value="Value18">Parc Bagatelle</option>
+  <option value="Value19">Walygator</option>
+  <option value="Value20">Festyland</option>
+  <option value="Value21">Musée du Louvre</option>
+  <option value="Value22">Musée d'Orsay</option>
+  <option value="Value23">Louvre-Lens</option>
+  <option value="Value24">Musée des Confluences</option>
+  <option value="Value25">Parc Spirou</option>
+  <option value="Value26">Terra Botanica</option>
+  <option value="Value27">PortAventura Park</option>
+  <option value="Value28">Enigma Parc</option>
+  <option value="Value29">Rulantica</option>
+  <option value="Value30">Parc du Petit Prince</option>
+</select>
+<script>
+function getActivity(selectObject){
+  const highlightedItems = document.querySelectorAll("iframe");
+    highlightedItems.forEach(function(userItem) {
+        userItem.style.display = "none";
+    });
+  var value = selectObject.value; 
+  if(value == "Value1"){
+    document.getElementById("disney").style.display = "block";
+  }else if(value == "Value2"){
+
+    document.getElementById("puydufou").style.display = "block";
+  }else if(value == "Value3"){
+
+document.getElementById("futuroscope").style.display = "block";
+}else if(value == "Value4"){
+
+document.getElementById("parcasterix").style.display = "block";
+}else if(value == "Value5"){
+
+document.getElementById("marineland").style.display = "block";
+}else if(value == "Value6"){
+
+document.getElementById("aqualand").style.display = "block";
+}else if(value == "Value7"){
+
+document.getElementById("vulcania").style.display = "block";
+}else if(value == "Value8"){
+
+document.getElementById("oceanopolis").style.display = "block";
+}else if(value == "Value9"){
+
+document.getElementById("nigloland").style.display = "block";
+}else if(value == "Value10"){
+
+document.getElementById("citeespace").style.display = "block";
+}else if(value == "Value11"){
+
+document.getElementById("fraispertuis").style.display = "block";
+}else if(value == "Value12"){
+
+document.getElementById("dennlys").style.display = "block";
+}else if(value == "Value13"){
+
+document.getElementById("merdesable").style.display = "block";
+}else if(value == "Value14"){
+
+document.getElementById("combes").style.display = "block";
+}else if(value == "Value15"){
+
+document.getElementById("walibi").style.display = "block";
+}else if(value == "Value16"){
+
+document.getElementById("europapark").style.display = "block";
+}else if(value == "Value17"){
+
+document.getElementById("okcorral").style.display = "block";
+}else if(value == "Value18"){
+
+document.getElementById("parcbagatelle").style.display = "block";
+}else if(value == "Value19"){
+
+document.getElementById("walygator").style.display = "block";
+}else if(value == "Value20"){
+
+document.getElementById("festyland").style.display = "block";
+}else if(value == "Value21"){
+
+document.getElementById("louvre").style.display = "block";
+}else if(value == "Value22"){
+
+document.getElementById("orsay").style.display = "block";
+}else if(value == "Value23"){
+
+document.getElementById("louvrelens").style.display = "block";
+}else if(value == "Value24"){
+
+document.getElementById("confluences").style.display = "block";
+}else if(value == "Value25"){
+
+document.getElementById("parcspirou").style.display = "block";
+}else if(value == "Value26"){
+
+document.getElementById("terrabotanica").style.display = "block";
+}else if(value == "Value27"){
+
+document.getElementById("portaventura").style.display = "block";
+}else if(value == "Value28"){
+
+document.getElementById("enigmaparc").style.display = "block";
+}else if(value == "Value29"){
+
+document.getElementById("rulantica").style.display = "block";
+}else if(value == "Value30"){
+
+document.getElementById("parcdupetitprince").style.display = "block";
+}
+
+}
+</script>
+<center><iframe id="disney" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5187966913018!2d2.7814043156399815!3d48.86738577928832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61d19ca7ae2bd%3A0x57faf8cb6310e660!2sDisneyland%20Paris!5e0!3m2!1sfr!2sfr!4v1669356588626!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="puydufou" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.666844163577!2d-0.9303044844302749!3d46.88960237914368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48065eb9615fe2ab%3A0x48386616c38da263!2sPuy%20du%20Fou!5e0!3m2!1sfr!2sfr!4v1669356632290!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="futuroscope" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.9821377563776!2d0.3652611155619336!3d46.666613779133534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fda33c42dc2de3%3A0x6676320a3d792873!2sFuturoscope!5e0!3m2!1sfr!2sfr!4v1669356671878!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="parcasterix" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.4971926467424!2d2.569041615649667!3d49.134183779315414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671ae444f41bb%3A0x95cf289d71bcfb42!2sParc%20Ast%C3%A9rix!5e0!3m2!1sfr!2sfr!4v1669356713342!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="marineland" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61720824.4797795!2d-101.13961435!3d19.232722149999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd4e4d3af2783%3A0x11cde10a6df429f5!2sMarineland!5e0!3m2!1sfr!2sfr!4v1669356762959!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="aqualand" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.0312415069243!2d6.724614315451834!3d43.418173979130046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cebd6aca995eb7%3A0xa11c6b1f318e14fb!2sAqualand%20Fr%C3%A9jus!5e0!3m2!1sfr!2sfr!4v1669356820957!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="vulcania" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.8732156961682!2d2.940367415532404!3d45.81379747910661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71426ca4aff97%3A0x9ba5dfb092831813!2sVulcania!5e0!3m2!1sfr!2sfr!4v1669356907431!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="oceanopolis" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.46531117827!2d-4.438188284377159!3d48.390006679244344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816b98b07b7a3bb%3A0x5fef7336065da466!2sOc%C3%A9anopolis!5e0!3m2!1sfr!2sfr!4v1669357027312!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="nigloland" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.194003656917!2d4.607844315618185!3d48.26064097923342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ec40fecb88d2c3%3A0xf746b0e3c0de7930!2sNigloland!5e0!3m2!1sfr!2sfr!4v1669357082362!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="citeespace" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.9562704521186!2d1.4911680154573608!3d43.586627179123724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebda8aa57f62f%3A0x76e19e69940e4e52!2sCit%C3%A9%20de%20l&#39;espace!5e0!3m2!1sfr!2sfr!4v1669357140564!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="fraispertuis" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2652.8593385689546!2d6.7256239156205!3d48.3247856792388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479391a70468cfe7%3A0x654feb99c2b9bb56!2sFraispertuis%20City!5e0!3m2!1sfr!2sfr!4v1669357200598!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="dennlys" style="display:none"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.9658100097727!2d2.149949315702299!3d50.57199977949228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dda95c2d98f71f%3A0xe65592daa30102e0!2sDennlys%20Parc!5e0!3m2!1sfr!2sfr!4v1669357247974!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="merdesable" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.8813158540283!2d2.6751106156500937!3d49.14587777931674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6253aa32de68b%3A0x9b9779a86315aa73!2sLa%20Mer%20de%20Sable!5e0!3m2!1sfr!2sfr!4v1669357290255!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe  id="combes" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.628277990852!2d4.411012615567019!3d46.81162777914005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f24bdde9abbb07%3A0x1e1e3e04650864d!2sParc%20Des%20Combes!5e0!3m2!1sfr!2sfr!4v1669357331073!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe  id="walibi" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.539727580664!2d5.566956215525785!3d45.61989277910302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b17864eea5afb%3A0x212618e15f7b92e5!2sWalibi%20Rh%C3%B4ne-Alpes!5e0!3m2!1sfr!2sfr!4v1669357371148!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="europapark" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.9145267196773!2d7.7198189156183865!3d48.266019379233825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791398732e35ed9%3A0x14b73404fff2ada0!2sEuropa-Park!5e0!3m2!1sfr!2sfr!4v1669357397507!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe  id="okcorral" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.224999692027!2d5.725738615446873!3d43.26766187913642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c90a00ac7eb7e7%3A0x69e0d808dca529bc!2sOK%20Corral!5e0!3m2!1sfr!2sfr!4v1669357428882!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="parcbagatelle" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3674999246423!2d2.243780015640097!3d48.8702703792887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6652fe18af899%3A0x1640eaa06807a3ef!2sParc%20Bagatelle%20-%20la%20Roseraie!5e0!3m2!1sfr!2sfr!4v1669357479452!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="walygator" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2668229.606957312!2d1.6735757249999963!3d49.225349499999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47952711460df1a9%3A0x27b215fdcf527c0c!2sWalygator%20Grand%20Est!5e0!3m2!1sfr!2sfr!4v1669357521603!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="festyland" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670463.693804694!2d-4.907348174999993!3d49.183964199999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a4342a12f88a5%3A0x726330e142bf4fa1!2sFestyland!5e0!3m2!1sfr!2sfr!4v1669357554032!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="louvre" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.874105839415!2d2.333159331006886!3d48.86061101303942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sMus%C3%A9e%20du%20Louvre!5e0!3m2!1sfr!2sfr!4v1669357641146!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="orsay" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9081745797303!2d2.324372715639707!3d48.859961379287626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2bb630941b%3A0xd071bd8cb14423d8!2sMus%C3%A9e%20d&#39;Orsay!5e0!3m2!1sfr!2sfr!4v1669357674706!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="louvrelens" style="display:none"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.5490088375454!2d2.802181315697089!3d50.430873779472584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd308ef285ff95%3A0xeb88cdf657209056!2sMus%C3%A9e%20du%20Louvre-Lens!5e0!3m2!1sfr!2sfr!4v1669357721060!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="confluences" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.919098721309!2d4.81608246552967!3d45.73271722910501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eaeddd6c9055%3A0xae3e2900f5f2c337!2sMus%C3%A9e%20des%20Confluences!5e0!3m2!1sfr!2sfr!4v1669357762610!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="parcspirou" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.0459104297015!2d4.968097215471745!3d44.02044577911044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b58c8449e50b25%3A0xd92a4b1f1faf16b7!2sParc%20Spirou%20Provence!5e0!3m2!1sfr!2sfr!4v1669357797587!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="terrabotanica" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.4266527957757!2d-0.5730553844087689!3d47.50108167917777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480879340bb5db6d%3A0xfb0fb1e8fd6bb94c!2sParc%20Terra%20Botanica!5e0!3m2!1sfr!2sfr!4v1669357842624!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="portaventura" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.2281458789384!2d1.1517522153766953!3d41.085861579293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a159bb97a24019%3A0x9bb01aabaec2d626!2sPortAventura%20Park!5e0!3m2!1sfr!2sfr!4v1669357889471!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe  id="enigmaparc" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.0945938120494!2d-1.5338126843920434!3d47.97322987921073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f25ecdd2e0d77%3A0xc322383d8c4d77b7!2sEnigmaparc%2C%20parc%20de%20loisirs%20indoor%20Rennes%20Sud!5e0!3m2!1sfr!2sfr!4v1669357924387!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="rulantica" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.163003780826!2d7.737732415618209!3d48.261237579233494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47913bc0d04d4f4f%3A0x11639c8d230f31bb!2sRulantica!5e0!3m2!1sfr!2sfr!4v1669357966439!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="parcdupetitprince" style="display:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.8686074786438!2d7.295501515603985!3d47.86150787920235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791790797ab2af9%3A0xa75cc5f667aa3935!2sLe%20Parc%20du%20Petit%20Prince!5e0!3m2!1sfr!2sfr!4v1669358006192!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
   <app-root></app-root>
 </body>
 </html>

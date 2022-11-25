@@ -24,6 +24,12 @@ public class ActivityResource {
         return new ResponseEntity<>(activityList, HttpStatus.OK);
     }
 
+    @GetMapping("/search/{name}")
+    public ResponseEntity<List<Activity>> findByNameContaining(@PathVariable("name") String name){
+        List<Activity> activityList = this.activityService.findByNameContaining(name);
+        return new ResponseEntity<>(activityList, HttpStatus.OK);
+    }
+
     @GetMapping("/find/{id}")
     public ResponseEntity<Activity> getActivityById(@PathVariable("id") Long id) throws Throwable {
         Activity activity = this.activityService.findActivityById(id);
